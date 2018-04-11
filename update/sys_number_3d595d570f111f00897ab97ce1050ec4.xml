@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_129369_proxwel_p_proxwel_cv_library">x_129369_proxwel_p_proxwel_cv_library</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>CV</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-11 10:34:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3d595d570f111f00897ab97ce1050ec4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CV</sys_name>
+        <sys_package display_value="Proxwel_Portal" source="x_129369_proxwel_p">155959570f111f00897ab97ce1050e48</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Proxwel_Portal">155959570f111f00897ab97ce1050e48</sys_scope>
+        <sys_update_name>sys_number_3d595d570f111f00897ab97ce1050ec4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-11 10:34:04</sys_updated_on>
+    </sys_number>
+</record_update>
