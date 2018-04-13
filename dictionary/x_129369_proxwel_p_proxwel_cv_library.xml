@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Proxwel_CV_Library" max_length="40" name="x_129369_proxwel_p_proxwel_cv_library" type="collection">
+        <element label="Attachment" max_length="32" name="attachment" reference="sys_attachment" type="reference"/>
+        <element label="Availability" max_length="40" name="availability" type="integer"/>
+        <element label="Available" max_length="40" name="available" type="boolean"/>
+        <element label="Currency" max_length="32" name="currency" type="glide_list"/>
+        <element label="First Name" max_length="100" name="first_name" type="string"/>
+        <element label="Full Name" max_length="100" name="full_name" type="string"/>
+        <element label="Last Name" max_length="100" name="last_name" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Rate" max_length="20" name="rate" type="price"/>
+        <element label="Year's Experience" max_length="40" name="year_s_experience" type="integer"/>
+        <index name="index">
+            <element name="attachment"/>
+        </index>
     </element>
 </database>
