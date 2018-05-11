@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message_fn_param_defs">
+    <sys_rest_message_fn_param_defs action="INSERT_OR_UPDATE">
+        <name>symbols</name>
+        <order>100</order>
+        <rest_message_function display_value="Get Euro">77aa15940f869380897ab97ce1050e02</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_param_defs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 10:12:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5d40211c0f8a9380897ab97ce1050ee2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>symbols</sys_name>
+        <sys_package display_value="Proxwel_Portal" source="x_129369_proxwel_p">155959570f111f00897ab97ce1050e48</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Proxwel_Portal">155959570f111f00897ab97ce1050e48</sys_scope>
+        <sys_update_name>sys_rest_message_fn_param_defs_5d40211c0f8a9380897ab97ce1050ee2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 15:14:10</sys_updated_on>
+        <value>${symbols}</value>
+    </sys_rest_message_fn_param_defs>
+</record_update>

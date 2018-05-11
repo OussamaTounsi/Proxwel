@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Rate" max_length="40" name="x_129369_proxwel_p_rate" type="collection">
+        <element label="CAD" max_length="40" name="cad" type="float"/>
+        <element label="Euro" max_length="40" name="euro" type="float"/>
+        <element label="GPB" max_length="40" name="gpb" type="float"/>
+        <element label="USD" max_length="40" name="usd" type="float"/>
+    </element>
+</database>

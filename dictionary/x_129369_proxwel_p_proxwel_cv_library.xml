@@ -9,7 +9,9 @@
         <element label="Full Name" max_length="100" name="full_name" type="string"/>
         <element label="Last Name" max_length="100" name="last_name" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Picture" max_length="40" name="picture" type="user_image"/>
         <element label="Rate" max_length="20" name="rate" type="price"/>
+        <element label="test" max_length="800" name="test" type="data_structure"/>
         <element label="Year's Experience" max_length="40" name="year_s_experience" type="integer"/>
         <index name="index">
             <element name="attachment"/>

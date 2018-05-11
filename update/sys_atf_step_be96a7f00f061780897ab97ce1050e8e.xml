@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>There should be at least one record in 'x_129369_proxwel_p_rate' matching a query of
+Updated &gt;= 2018-05-11 10:00:00
+With a failure timeout of 5 Seconds</description>
+        <display_name>Record Query</display_name>
+        <inputs/>
+        <order>2</order>
+        <step_config display_value="Record Query">0270b8005f30220012b44adb7f46666a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 09:14:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be96a7f00f061780897ab97ce1050e8e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Record Query</sys_name>
+        <sys_package display_value="Proxwel_Portal" source="x_129369_proxwel_p">155959570f111f00897ab97ce1050e48</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Proxwel_Portal">155959570f111f00897ab97ce1050e48</sys_scope>
+        <sys_update_name>sys_atf_step_be96a7f00f061780897ab97ce1050e8e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 09:15:51</sys_updated_on>
+        <table>x_129369_proxwel_p_rate</table>
+        <test display_value="Check Rate Table">81152bb00f061780897ab97ce1050ead</test>
+        <timeout>1970-01-01 00:00:05</timeout>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=be96a7f00f061780897ab97ce1050e8e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>be96a7f00f061780897ab97ce1050e8e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 09:14:58</sys_created_on>
+        <sys_id>37e66fb00f061780897ab97ce1050e50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 09:14:58</sys_updated_on>
+        <value>sys_updated_on&gt;=javascript:gs.beginningOfLast15Minutes()^EQ</value>
+        <variable display_value="">cf167c405f30220012b44adb7f46660d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>be96a7f00f061780897ab97ce1050e8e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-11 09:14:58</sys_created_on>
+        <sys_id>73e66fb00f061780897ab97ce1050e50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-11 09:14:58</sys_updated_on>
+        <value>x_129369_proxwel_p_rate</value>
+        <variable display_value="">6fe5f8405f30220012b44adb7f4666e4</variable>
+    </sys_variable_value>
+</record_update>

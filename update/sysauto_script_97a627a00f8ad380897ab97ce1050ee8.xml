@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Update Currency Table</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 00:15:00</run_period>
+        <run_start>2018-05-10 14:35:22</run_start>
+        <run_time>1969-12-31 23:15:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[// implement resource here
+var requestBody, responseBody, status, sm;
+try{
+	//Time the overall transaction so there's a record of how long our outbound webservice takes
+	var startTimer = new Date();
+		
+	sm = new sn_ws.RESTMessageV2("Test Currency Example", "get euro");
+	
+	//sm.setBasicAuth("admin","admin");
+	sm.setStringParameter("symbols", "USD");
+	sm.setHttpTimeout(10000);
+	//In milliseconds. Wait at most 10 seconds for response from http request.
+		
+	var getresponse = sm.execute();
+	var responseBody = getresponse.getBody();
+		
+	//clear out old records
+	
+	var currentweather = new GlideRecord("x_129369_proxwel_p_rate");
+	currentweather.query();
+	currentweather.deleteMultiple();
+		
+	var gr = new GlideRecord("x_129369_proxwel_p_staging_current_currency");
+	
+	gr.query();
+	gr.deleteMultiple();
+	
+	//Convert the response into JSON
+	
+	var JSONdata = new global.JSON().decode(responseBody);
+	
+	gr.setValue("rate_usd",JSONdata.rates.USD);
+	gs.info('***USD updated in ' + JSONdata.rates.USD );
+	//gr.setValue("temperature",JSONdata.main.temp );
+	
+	gr.insert();
+		
+	//Post a message to the application log noting how long this activity took
+	var endTimer = new Date() - startTimer;
+	
+	gs.info('***Weather updated in ' + endTimer + ' msec');
+	
+} catch(ex) {
+	responseBody = "An error has occurred";
+	status = '500';	
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-10 14:46:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>97a627a00f8ad380897ab97ce1050ee8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Update Currency Table</sys_name>
+        <sys_package display_value="Proxwel_Portal" source="x_129369_proxwel_p">155959570f111f00897ab97ce1050e48</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Proxwel_Portal">155959570f111f00897ab97ce1050e48</sys_scope>
+        <sys_update_name>sysauto_script_97a627a00f8ad380897ab97ce1050ee8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-10 15:43:47</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

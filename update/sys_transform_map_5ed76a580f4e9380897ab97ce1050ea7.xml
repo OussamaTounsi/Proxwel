@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Transform Current Currency Rate</name>
+        <order>100</order>
+        <run_business_rules>false</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_129369_proxwel_p_staging_current_currency</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-09 15:25:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5ed76a580f4e9380897ab97ce1050ea7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Transform Current Currency Rate</sys_name>
+        <sys_package display_value="Proxwel_Portal" source="x_129369_proxwel_p">155959570f111f00897ab97ce1050e48</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Proxwel_Portal">155959570f111f00897ab97ce1050e48</sys_scope>
+        <sys_update_name>sys_transform_map_5ed76a580f4e9380897ab97ce1050ea7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-09 15:25:08</sys_updated_on>
+        <target_table>x_129369_proxwel_p_rate</target_table>
+    </sys_transform_map>
+</record_update>

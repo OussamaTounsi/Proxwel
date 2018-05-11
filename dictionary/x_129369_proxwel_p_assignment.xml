@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Assignment" max_length="40" name="x_129369_proxwel_p_assignment" type="collection">
+        <element label="Delivery Task" max_length="32" name="u_reference_1" reference="sc_cat_item_delivery_task" type="reference"/>
+        <element label="Delivery Plan" max_length="32" name="u_reference_2" reference="sc_cat_item_delivery_plan" type="reference"/>
+    </element>
+</database>

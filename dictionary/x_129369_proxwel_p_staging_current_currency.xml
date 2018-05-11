@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Staging Current Currency" max_length="40" name="x_129369_proxwel_p_staging_current_currency" type="collection">
+        <element label="Rate_CAD" max_length="40" name="rate_cad" type="float"/>
+        <element label="Rate_GBP" max_length="40" name="rate_gbp" type="float"/>
+        <element label="Rate_USD" max_length="40" name="rate_usd" type="float"/>
+    </element>
+</database>
